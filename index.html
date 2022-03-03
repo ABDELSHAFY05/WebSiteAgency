@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template one</title>
+    <!-- main template css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/javas.js"></script>
+    <!--render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="button"></a> 
+  <nav class="navbar">
+    <div class="brand-title"><img src="images/logo.png" alt=""style="width:150px"></div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+  </script>
+  
+<!-- Start Landing -->
+<div class="landing">
+  <div class="container">
+    <div class="text">
+      <h1>Welcome, To MEGACODE</h1>
+      <p>Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing, Stories and Events</p>
+    </div>
+    <div class="image">
+      <img src="images/megamenu.png" alt="" />
+    </div>
+  </div>
+  <a href="div.contact" class="go-down">
+    <i class="fas fa-angle-double-down fa-2x"></i>
+  </a>
+</div>
+<!-- End Landing -->
+ 
+ <!-- Start Features -->
+ <div class="features">
+  <div class="container">
+    <div class="feat">
+      <i class="fas fa-magic fa-3x"></i>
+      <h3>Tell Us Your Idea</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+    </div>
+    <div class="feat">
+      <i class="far fa-gem fa-3x"></i>
+      <h3>We Will Do All The Work</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+    </div>
+    <div class="feat">
+      <i class="fas fa-globe-asia fa-3x"></i>
+      <h3>Your Product is Worldwide</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+    </div>
+  </div>
+</div>
+<!-- End Features -->
+
+<!-- start contact -->
+<section class="w3l-contact-2">
+  <div class="contact-infubd section-gap">
+    <div class="wrapper">
+      <div class="contact-grids d-grid">
+        <div class="contact-left">
+          <h3>Contact</h3>
+          <span class="fa fa-envelope-open-o" aria-hidden="true"></span>
+          <h4>Leave us a Message</h4>
+          <h6>For more info or inquiry about our products project, and pricing please feel free to get in touch with
+            us.</h6>
+        </div>
+        <div class="contact-right">
+          <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+            <div class="input-grids">
+              <input type="text" name="w3lName" id="w3lName" placeholder="Your Name" class="contact-input" />
+              <input type="email" name="w3lSender" id="w3lSender" placeholder="Your Email" class="contact-input"
+                required="" />
+              <input type="text" name="w3lSubect" id="w3lSubect" placeholder="Subject" class="contact-input" />
+            </div>
+            <div class="form-input">
+              <textarea name="w3lMessage" id="w3lMessage" placeholder="Type your message here"
+                required=""></textarea>
+            </div>
+            <button class="btn submit">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+</section>
+<!-- end contact -->
+
+<!-- start back to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+
+<script>
+        //Get the button
+var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function(){
+    scrollFunction()
+};
+    
+function scrollFunction(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        mybutton.style.display = "block";
+    }else {
+        mybutton.style.display = "none";
+    }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- end back to top -->
+
+</body>
