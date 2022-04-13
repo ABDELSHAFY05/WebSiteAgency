@@ -7,7 +7,6 @@
     <title>Template one</title>
     <!-- main template css file -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/javas.js"></script>
     <!--render all elements normally -->
     <link rel="stylesheet" href="css/normalize.css">
     <!--font awesome library -->
@@ -54,7 +53,7 @@ toggleButton.addEventListener('click', () => {
       <img src="images/megamenu.png" alt="" />
     </div>
   </div>
-  <a href="div.contact" class="go-down">
+  <a href="#features" class="go-down">
     <i class="fas fa-angle-double-down fa-2x"></i>
   </a>
 </div>
@@ -62,6 +61,7 @@ toggleButton.addEventListener('click', () => {
  
  <!-- Start Features -->
  <div class="features">
+  <h2 class="main-title">About</h2>
   <div class="container">
     <div class="feat">
       <i class="fas fa-magic fa-3x"></i>
@@ -76,6 +76,21 @@ toggleButton.addEventListener('click', () => {
     <div class="feat">
       <i class="fas fa-globe-asia fa-3x"></i>
       <h3>Your Product is Worldwide</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+    </div>
+    <div class="feat">
+      <i class="fa-solid fa-lock fa-3x"></i>
+      <h3>Lorem ipsum dolor sit</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+    </div>
+    <div class="feat">
+      <i class="fa-solid fa-key fa-3x"></i>
+      <h3>Consectetur adipiscing elit</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+    </div>
+    <div class="feat">
+      <i class="fa-regular fa-id-badge fa-3x"></i>
+      <h3>Sed do eiusmod tempor</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
     </div>
   </div>
@@ -95,18 +110,21 @@ toggleButton.addEventListener('click', () => {
             us.</h6>
         </div>
         <div class="contact-right">
-          <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+          <form target="_blank" action="https://formsubmit.co/abdechafijoker@gmail.com" method="POST" class="signin-form">
             <div class="input-grids">
-              <input type="text" name="w3lName" id="w3lName" placeholder="Your Name" class="contact-input" />
-              <input type="email" name="w3lSender" id="w3lSender" placeholder="Your Email" class="contact-input"
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="U just received a new Email" />
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/" />
+              <input type="text" name="Name" id="Name" placeholder="Your Name" class="contact-input" />
+              <input type="email" name="email" id="email" placeholder="Your Email" class="contact-input"
                 required="" />
-              <input type="text" name="w3lSubect" id="w3lSubect" placeholder="Subject" class="contact-input" />
+              <input type="text" name="Subject" id="Subject" placeholder="Subject" class="contact-input" />
             </div>
             <div class="form-input">
-              <textarea name="w3lMessage" id="w3lMessage" placeholder="Type your message here"
+              <textarea name="Message" id="Message" placeholder="Type your message here"
                 required=""></textarea>
             </div>
-            <button class="btn submit">Send Message</button>
+            <button class="btnsubmit">Send Message</button>
           </form>
         </div>
 
@@ -118,29 +136,66 @@ toggleButton.addEventListener('click', () => {
 <!-- start back to top -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
 
-<script>
-        //Get the button
-var mybutton = document.getElementById("myBtn");
-    
-    // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function(){
-    scrollFunction()
-};
-    
-function scrollFunction(){
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-        mybutton.style.display = "block";
-    }else {
-        mybutton.style.display = "none";
-    }
-    }
-    
-    // When the user clicks on the button, scroll to the top of the document
-function topFunction(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-</script>
+
 <!-- end back to top -->
 
+<!-- start footer -->
+
+<div class="footer">
+  <div class="container">
+    <div class="box">
+      <h3>MegaCode</h3>
+      <ul class="social">
+        <li>
+          <a href="#" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur
+      </p>
+    </div>
+    <div class="box">
+      <ul class="links">
+        <li><a href="#">Important Link 1</a></li>
+        <li><a href="#">Important Link 2</a></li>
+        <li><a href="#">Important Link 3</a></li>
+        <li><a href="#">Important Link 4</a></li>
+        <li><a href="#">Important Link 5</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <div class="line">
+        <i class="fas fa-map-marker-alt fa-fw"></i>
+        <div class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+      </div>
+      <div class="line">
+        <i class="far fa-clock fa-fw"></i>
+        <div class="info">Business Hours: From 09:00 To 17:00</div>
+      </div>
+      <div class="line">
+        <i class="fas fa-phone-volume fa-fw"></i>
+        <div class="info">
+          <span>+21223456789</span>
+          <span>+21298765432</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="copyright">Made With &lt;3 By Me <a href="https://www.linkedin.com/in/abdechafi-elkharta/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
+</div>
+
+<!-- end footer -->
+<script src="js/javas.js"></script>
 </body>
